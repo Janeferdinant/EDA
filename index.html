@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .bordered-header {
+            border: 2px solid black; /* You can adjust the thickness, style, and color of the border as needed */
+            padding: 5px; /* Optional: add padding to the header to create space between the text and the border */
+        }
+        .header-with-line {
+            border-bottom: 1px solid black; /* You can adjust the thickness and color of the line as needed */
+            padding-bottom: 5px; /* Optional: add padding to create space between the text and the line */
+            
+        }
+        .header-with-line {
+            display: flex; /* Use flexbox to arrange items */
+            align-items: center; /* Align items vertically */
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+        
+        .header-text {
+            flex: 1; /* Allow the text to take up remaining space */
+        }
+        
+        .header-image {
+            margin-left: auto; /* Push the image to the right end */
+        }
+    </style>
+
+<body>
+        
+    <div class="container">
+        <header class="header-with-line">
+            <h1><span  class="header-text">Jane Rose Ferdinant</span></h1>
+            <img src="jane photo.jpg" alt="Your Image" class="header-image"width="99" height="110">
+        </header>
+        
+    
+        <p>Mobile: +971508174235 | Email: janeferdinant@gmail.com | Email: jane.elixer143@gmail.com</p>
+        <p>Abu Dhabi, United Arab Emirates</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/janerosenf">janerosenf</a></p> 
+        <p>GitHub: <a href="https://github.com/janeferdinant">janeferdinant</a></p>
+        <p>IEEE: <a href=" https://ieeexplore.ieee.org/document/8986220">janeferdinantIEEE</a></p>
+        <h2>Personal_Details</h2>
+        <button id="Per" > Personal_Details  ▼ </button>
+        <div id="personal" style="display: none;">
+        <p><strong>Father’s Name:</strong> Ferdinant Nallengara</p>
+        <p><strong>Partner's Name:</strong> Lijo George</p>
+        <p><strong>Permanent Address:</strong> Thekkanath Nallengara House, 106, Green valley, Anchery chira, Thrissur, Kerala</p>
+        <p><strong>Date of Birth:</strong> 12th December 1993</p>
+        <p><strong>Languages Known:</strong> English, Malayalam</p>
+        <p><strong>Marital Status:</strong> Married</p>
+        <p><strong>Nationality:</strong> Indian</p>
+        <p><strong>Passport No.:</strong> B8211567 <strong>Exp. Dt:</strong> 21-11-2033</p>
+        </div>
+    
+    <h2>Documents</h2>
+    
+    <button onclick="window.location.href = 'BTech certificate (1).pdf', '_blank'" class="w3-button w3-light-grey w3-padding-large w3-section">BTech ▼</button>
+    <button onclick="window.location.href = 'M.Tech - Degree Certificate (1).pdf', '_blank'" class="w3-button w3-light-grey w3-padding-large w3-section">MTech ▼</button>
+    <button onclick="window.location.href = 'Passport 2033  (1).pdf', '_blank'" class="w3-button w3-light-grey w3-padding-large w3-section">Passport ▼</button>
+    
+    <h2>Professional Summary</h2>
+    <p>Dynamic and results-driven Data Scientist with expertise in Machine Learning and Business Intelligence. 
+    Excels in leveraging data analysis and visualization techniques to drive strategic decision-making. 
+    Seeking to contribute skills and experience to Organization in delivering innovative data-driven solutions.</p>
+       
+    
+    <script>
+    function toggleText(textId) {
+        var texts = document.querySelectorAll('.toggle-text');
+        
+        for (var i = 0; i < texts.length; i++) {
+            if (texts[i].id === textId) {
+                texts[i].style.display = "block";
+            } else {
+                texts[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+    </head>
+    <body>
+        
+    <button onclick="toggleText('text1')">Experience ▼</button>
+    <button onclick="toggleText('text2')">Education ▼</button>
+    <button onclick="toggleText('text3')">Skills ▼</button>
+    <button onclick="toggleText('text4')">Projects ▼</button>
+    
+    <div class="toggle-text" id="text1" style="display:none;">
+        <h2>Experience</h2>
+        <p>Intern Consultant, Technovalley Software India Private Limited – Ernakulam, Kerala, IN (March 2021 – December 2021)</p>
+        <ul>
+            <li>Developed innovative anomaly detection algorithms resulting in a 20% reduction in false positives and improved system reliability.</li>
+            <li>Spearheaded the implementation of Transfer Learning in computer vision projects, optimizing model performance and reducing training time by 30%.</li>
+            <li>Led a cross-functional team in deploying a recommendation system for an e-commerce platform, resulting in a 15% increase in customer engagement and a 10% boost in sales revenue.</li>
+        </ul>
+    </div>
+    <div class="toggle-text" id="text2" style="display:none;">
+        <h2>Education</h2>
+        <ul>
+          <li>M.Tech, Information Technology, 04/2017 – 04/2019, School of Engineering, Cochin University of Science and Technology, Kochi, Kerala, India</li>
+          <li>B.Tech, Electronics and Communications, 04/2011 – 04/2015, Sahrdaya College of Engineering and Technology, Thrissur, Kerala, India</li>
+        </ul>
+    </div>
+    <div class="toggle-text" id="text3" style="display:none;">
+        <h2>Skills</h2>
+        <ul>
+            <li>Tensorflow</li>
+            <li>opencv,pytorch,</li>
+            <li>matlab,AWS s3,Azure,GCP</li>
+            <li>python,html,css,JavaScript</li>
+            <li>flask,docker,streamlit,fastapi,</li>
+            <li>sql,Excel,power BI,Tableau</li>
+            <li>ResNet,CNN,GAN,Genarative AI,ANN,MLOps,LLM</li>
+            
+            <!-- Add more skills here -->
+        </ul>
+    </div>
+    <div class="toggle-text" id="text4" style="display:none;">
+        
+        <h2>Projects</h2>
+             
+        <h3>Sales Performance Dashboard with Power BI</h3>
+        <p>Developed a comprehensive sales performance dashboard using Power BI, analyzing revenue, profit, 
+             and sales growth trends over time.</p>
+       <!--
+             <p>Blog Link: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+             <p>GitHub Link: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+          -->
+             <!-- Add image for this project -->
+      
+       <!-- Add other projects similarly -->
+    
+       <h3>Customer Segmentation Analysis with Tableau.</h3>
+       <p>description: "Conducted customer segmentation analysis using Tableau, 
+       identifying key customer segments based on demographic and behavioral attributes.</p>
+       <!--
+       <p>blogLink: "<a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: "<a href="https://github.com/janeferdinant">GitHub Link</a></p>
+       -->
+       <p>image: "<a href="Customer Segmentation Analysis with Tableau.jpeg" >image</a></p>
+    
+    
+    
+       <h3>Marketing Campaign Effectiveness Dashboard with Power BI.</h3>
+       <p>description: "Built a marketing campaign effectiveness dashboard in Power BI, 
+       tracking key metrics such as click-through rates, conversion rates, and ROI.</p>
+       <!--
+       <p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+       -->
+       <p>image: <a href="Marketing Campaign Effectiveness Dashboard with Power BI.jpeg">image</a></p>
+    
+    
+       <h3>Inventory Management Dashboard with Tableau.</h3>
+       <p>description: "Designed an inventory management dashboard using Tableau,
+        monitoring inventory levels, stock turnover rates, and supplier performance.</p>
+       <p>image: <a href="Inventory Management Dashboard with Tableau.jpeg">image</a></p>
+    
+    
+       <h3>Employee Performance Analytics with Power BI.</h3>
+       <p>description: "Analyzed employee performance metrics using Power BI, 
+       including sales targets, productivity, and customer satisfaction scores.</p>
+       <p>image: <a href="Employee Performance Analytics with Power BI.jpeg">image</a></p>
+    
+    
+       <h3>Financial Statement Analysis Dashboard with Tableau.</h3>
+       <p>description: "Developed a financial statement analysis dashboard in Tableau, 
+       visualizing revenue, expenses, and profitability metrics</p>
+       <!--
+       <p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Financial Statement Analysis Dashboard with Tableau.jpeg">image</a></p>
+    
+    
+       <h3>Supply Chain Optimization Dashboard with Power BI.</h3>
+       <p>description: "Created a supply chain optimization dashboard in Power BI, 
+       analyzing key supply chain metrics such as lead times,
+       fill rates, and order fulfillment accuracy.</p>
+    <!--
+       <p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Supply Chain Optimization Dashboard with Power BI.jpeg">image</a></p>
+       
+    
+       <h2>Project prediction</h2>
+          
+    
+       <h3>Loan Prediction.</h3>
+       <p>description: "Implemented a machine learning model for loan prediction, 
+       leveraging predictive analytics to assess and optimize lending risk.</p>
+       <!--
+       <p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Loan Prediction.jpeg">image</a></p>
+    
+    
+       <h3>Housing Price Prediction.</h3>
+       <p>description: "Successfully devised a housing price prediction system using a 
+       combination of linear regression and gradient boosting regressor algorithms, 
+       contributing to informed real estate decision-making.</p>
+       <!--<p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Housing Price Prediction.jpeg">image</a></p>
+    
+    
+       <h3>Stock Market Analysis and Prediction.</h3>
+       <p>description: "Led the design and implementation of an LSTM-based model for comprehensive stock market analysis and accurate prediction, providing valuable insights to investors.",
+       <!--<p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Stock Market Analysis and Prediction.jpeg">image</a></p>
+    
+    
+       <h3>Twitter Sentiment Analysis.</h3>
+       <p>description: "Conducted sentiment analysis on Twitter data, providing valuable insights into public opinion and sentiment trends.",
+       
+       <!--    <p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Twitter Sentiment Analysis.jpeg">image</a></p>
+    
+    
+       <h3>Mall Customer Segmentation.</h3>
+       <p>description: "Implemented customer segmentation techniques for malls, enabling targeted marketing strategies and improving overall customer satisfaction.",
+      <!--
+           <p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Mall Customer Segmentation.jpeg">image</a></p>
+    
+    
+       <h3>Movie Recommender System.</h3>
+       <p>description: "Engineered a personalized movie recommender system, integrating collaborative filtering and recommendation algorithms to enhance user experience.",
+       <!--<p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Movie Recommender System.jpeg">image</a></p>
+    
+    
+       <h3>Bank Note Authentication.</h3>
+       <p>description: "Developed a robust system for authenticating bank notes, utilizing machine learning algorithms to ensure the integrity of currency transactions.",
+       <!--<p>blogLink: <a href="https://github.com/janeferdinant">Blog Link</a></p>
+       <p>gitLink: <a href="https://github.com/janeferdinant">GitHub Link</a></p>
+    -->
+       <p>image: <a href="Bank Note Authentication.jpeg">image</a></p>
+    
+    </div>
+    <script>
+        // Add your JavaScript code here
+        document.getElementById("Per").addEventListener("click", function() {
+            var experience = document.getElementById("personal");
+            if (experience.style.display === "none") {
+                experience.style.display = "block";
+            } else {
+                experience.style.display = "none";
+            }
+        });
+    </script>
+</body>
+    <!-- Footer Section -->
+    <footer>
+    <p>&copy; 2024 Jane Rose Ferdinant. </p>
+    <p>Contact: janeferdinant@gmail.com | Mobile: +971508174235</p>
+    </footer>
+    </html>    
+    </body>
