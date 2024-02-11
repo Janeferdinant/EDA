@@ -71,11 +71,12 @@
         </header>
         
     
-        <p>Mobile: +971508174235 | Email: janeferdinant@gmail.com | Email: jane.elixer143@gmail.com</p>
-        <p>Abu Dhabi, United Arab Emirates</p>
+        <p>Mobile: +1 647 568 6410 | Email: janeferdinant@gmail.com ; jane.elixer143@gmail.com</p>
+        <p>9 Mclaren Ave,Brantford N3T 0S3,Canada </p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/janerosenf">janerosenf</a></p> 
         <p>GitHub: <a href="https://github.com/janeferdinant">janeferdinant</a></p>
         <p>IEEE: <a href=" https://ieeexplore.ieee.org/document/8986220">janeferdinantIEEE</a></p>
+
         <h2>Personal_Details</h2>
         <button id="Per" > Personal_Details  ▼ </button>
         <div id="personal" style="display: none;">
@@ -119,8 +120,25 @@
         
     <button onclick="toggleText('text1')">Experience ▼</button>
     <button onclick="toggleText('text2')">Education ▼</button>
+    <p></p>                                               
     <button onclick="toggleText('text3')">Skills ▼</button>
     <button onclick="toggleText('text4')">Projects ▼</button>
+    <h4>To download resume click the button below</h4>
+    <button onclick="downloadPDF()"class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Download Resume ▼</button>
+
+        <script>
+          function downloadPDF() {
+            // Replace 'file.pdf' with the actual path to your PDF file
+            var pdfURL = 'data scientist - Canada.pdf';
+            var link = document.createElement('a');
+            link.href = pdfURL;
+            link.download = pdfURL.split('/').pop(); // This sets the filename to the last part of the URL
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+       </script>
     
     <div class="toggle-text" id="text1" style="display:none;">
         <h2>Experience</h2>
@@ -300,8 +318,8 @@
 </body>
     <!-- Footer Section -->
     <footer>
-    <p>&copy; 2024 Jane Rose Ferdinant. </p>
-    <p>Contact: janeferdinant@gmail.com | Mobile: +971508174235</p>
+    <p> Copyright &copy; 2024 | All rights reserved </p>
+    <p>Contact: janeferdinant@gmail.com ; jane.elixer143@gmail.com </p>
     </footer>
     </html>    
     </body>
